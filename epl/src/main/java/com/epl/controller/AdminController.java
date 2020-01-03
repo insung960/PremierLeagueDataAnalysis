@@ -108,9 +108,15 @@ public class AdminController {
 		return "modifyAdminPw";
 	}
 	
-	@GetMapping("/")
+	@GetMapping("/main")
 	public String main() {
 		return "main";
+		
+	}
+	
+	@GetMapping("/")
+	public String mainIndex() {
+		return "mainIndex";
 		
 	}
 }
